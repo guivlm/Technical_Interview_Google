@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QuickAction xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>When the action is opened, the user enters a badge number and clicks “Assign”. The action first checks whether the provided badge number is a valid record in the Badge__c object; if not, an error is displayed. Next, the action checks whether the selected</description>
+    <height>150</height>
+    <label>Assign Badge</label>
+    <lightningComponent>Assign_Badge</lightningComponent>
+    <optionsCreateFeedItem>false</optionsCreateFeedItem>
+    <type>LightningComponent</type>
+    <width>-100</width>
+</QuickAction>

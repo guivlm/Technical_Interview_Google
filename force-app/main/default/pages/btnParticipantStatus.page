@@ -1,0 +1,17 @@
+<apex:page standardController="Participant__c" recordSetVar="participants" extensions="ParticipantsController">
+    <apex:form >
+        <apex:pageBlock title="Edit Status" mode="edit">
+            <apex:pageMessages />
+            <apex:pageBlockButtons location="top">
+                <apex:commandButton value="Save" action="{!save}" />
+                <apex:commandButton value="Cancel" action="{!cancel}" />
+            </apex:pageBlockButtons>
+            <apex:pageBlockTable value="{!selected}" var="part">
+                <apex:column value="{!part.name}" />
+                <apex:column headerValue="Status">
+                    <apex:inputField value="{!part.Status__c}" />
+                </apex:column>
+            </apex:pageBlockTable>
+        </apex:pageBlock>
+    </apex:form>
+</apex:page>

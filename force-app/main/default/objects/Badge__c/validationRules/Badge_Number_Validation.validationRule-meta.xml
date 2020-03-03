@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Badge_Number_Validation</fullName>
+    <active>true</active>
+    <description>It prevents users to enter information other than numbers.</description>
+    <errorConditionFormula>NOT(
+				ISNUMBER( 
+								Badge_Number__c 
+				)
+)</errorConditionFormula>
+    <errorDisplayField>Badge_Number__c</errorDisplayField>
+    <errorMessage>This field just allow numbers.</errorMessage>
+</ValidationRule>
